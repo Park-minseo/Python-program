@@ -13,13 +13,11 @@ def 컴퓨터결정(a, 결과):
     a=randrange(1,4)
     if a == 1:
         결정 = "왼쪽"
-        return 결정
     elif a == 2:
         결정 = "오른쪽"
-        return 결정
     elif a == 3:
         결정 = "가운데"
-        return 결정
+    return 결정
 
 while True:
     내결정 = 컴결정 = 0
@@ -39,9 +37,12 @@ while True:
         sys.exit()
     elif 내결정 != 컴결정:
         if 차례 == 0:
+            print("컴퓨터의 선택은 {0} 이었습니다.".format(컴결정))
             print("공격에 실패하셨습니다. 다음 턴으로 넘어갑니다.")
+            차례 = 1
         elif 차례 == 1:
+            print("컴퓨터의 선택은 {0} 이었습니다.".format(컴결정))
             print("수비에 성공하셨습니다. 다음 턴으로 넘어갑니다.")
-        차례 = 1
+            차례 = 0
         턴 += 1
     print("-" *50)
