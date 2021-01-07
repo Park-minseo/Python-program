@@ -34,8 +34,8 @@ elif 캐릭터1.pre == 캐릭터2.pre:
 elif 캐릭터1.pre < 캐릭터2.pre:
         선공 = 1
 
-print("캐릭터의 정보를 확인해주세요. 7초 뒤 게임이 자동으로 시작됩니다.")
-time.sleep(7)
+print("캐릭터의 정보를 확인해주세요. 5초 뒤 게임이 자동으로 시작됩니다.")
+time.sleep(5)
 
 if 캐릭터1.hp > 0 and 캐릭터2.hp > 0:
     while True:
