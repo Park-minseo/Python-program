@@ -6,7 +6,7 @@ class unit:
     def __init__(self, name):
         self.name = name
         self.hp = randrange(100, 501)
-        self.attack = randrange(30, 101)
+        self.attack = randrange(50, 101)
         self.defend = randrange(10, 51)
         self.pre = randrange(100)
         self.addatk = randrange(10, 26)
